@@ -2,10 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
-# This function is similar to the makeVector function in the description
-# Overall steps: set+get vector, then set+get inverse
 
-# The goal is to make a special 'matrix'-object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -25,9 +22,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-# The goal is to write a function that computes the inverse of matrix-object
-# Approach is similar to the example in the assignment
-# Only difference is that we use the solve-function and apply it (row39)
 
 cacheSolve <- function(x, ...) {
         i <- x$getinv()
@@ -41,9 +35,6 @@ cacheSolve <- function(x, ...) {
         i
 }
 
-
-## Test
-# Create sample matrix
 x <- matrix( c(2, 4, 3, 1, 5, 6, 7, 3, 1), # the data elements 
                 nrow=3,              # number of rows 
                 ncol=3,              # number of columns 
